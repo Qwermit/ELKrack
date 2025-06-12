@@ -30,6 +30,7 @@ Run script with version
 
 ```shell
 cd ELKrack
+chmod +x ./build_crack_jar.sh
 sudo ./build_crack_jar.sh 9.0.2
 ```
 

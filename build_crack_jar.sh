@@ -4,9 +4,10 @@ branch="${v[0]}.${v[1]}"
 version="${v[0]}.${v[1]}.${v[2]}"
 
 # Define paths
-CUSTOM_JAR="/usr/share/elasticsearch/jdk/bin/javac"
+CUSTOM_JAVAC="/usr/share/elasticsearch/jdk/bin/javac"
+SYSTEM_JAVAC="$(command -v jarjavac)"
+
 CUSTOM_JAR="/usr/share/elasticsearch/jdk/bin/jar"
-SYSTEM_JAR="$(command -v jar)"
 SYSTEM_JAR="$(command -v jar)"
 
 # Determine which javac binary to use

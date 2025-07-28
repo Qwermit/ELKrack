@@ -5,7 +5,7 @@ version="${v[0]}.${v[1]}.${v[2]}"
 
 # Define paths
 CUSTOM_JAVAC="/usr/share/elasticsearch/jdk/bin/javac"
-SYSTEM_JAVAC="$(command -v jarjavac)"
+SYSTEM_JAVAC="$(command -v javac)"
 
 CUSTOM_JAR="/usr/share/elasticsearch/jdk/bin/jar"
 SYSTEM_JAR="$(command -v jar)"

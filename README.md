@@ -19,9 +19,13 @@ Tested versions 9.X:
 * elasticsearch 9.0.1
 * elasticsearch 9.1.3
 
-## Usage
+## Requirements
 
-Follow the "[Install Elasticsearch with a Debian package](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package)" official documentation
+* Follow the "[Install Elasticsearch with a Debian package](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-with-debian-package)" official documentation
+* `curl`
+* `unzip`
+
+## Usage
 
 ```shell
 git clone https://github.com/Qwermit/ELKrack
@@ -31,21 +35,23 @@ Run script with version
 
 ```shell
 cd ELKrack
-chmod +x ./build_crack_jar.sh
-sudo ./build_crack_jar.sh 9.0.2
+export VERSION=9.1.3
+# for fish shell:
+# set VERSION 9.1.3
+sudo ./build_crack_jar.sh
 ```
 
-Move cracked `x-pack-core-<version>.jar` to its destination
+Move cracked `x-pack-core-<version>.crack.jar` to its destination
 
 ```shell
 # make a backup
-sudo cp /usr/share/elasticsearch/modules/x-pack-core/x-pack-core-$version.jar /usr/share/elasticsearch/modules/x-pack-core/x-pack-core-$version.jar.bak
+sudo cp /usr/share/elasticsearch/modules/x-pack-core/x-pack-core-<version>.jar /usr/share/elasticsearch/modules/x-pack-core/x-pack-core-<version>.jar.bak
 
 # apply the crack
-sudo cp ./output/x-pack-core-$version.jar /usr/share/elasticsearch/modules/x-pack-core/x-pack-core-$version.jar
+sudo cp ./output/x-pack-core-<version>.crack.jar /usr/share/elasticsearch/modules/x-pack-core/x-pack-core-<version>.jar
 ```
 
 ## Licenses
 
-Use one of the provided licenses in the [licenses](https://github.com/Qwermit/ELKrack) directory.
+Use one of the provided licenses in the [licenses](https://github.com/Qwermit/ELKrack/tree/master/licenses) directory.
 

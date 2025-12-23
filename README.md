@@ -18,6 +18,7 @@ Tested versions 8.X (as of crack-elasticsearch-by-docker readme):
 Tested versions 9.X:
 * elasticsearch 9.0.1
 * elasticsearch 9.1.3
+* elasticsearch 9.3.3
 
 ## Requirements
 
@@ -38,6 +39,7 @@ cd ELKrack
 export VERSION=9.1.3
 # for fish shell:
 # set VERSION 9.1.3
+chmod +x build_crack_jar.sh
 sudo ./build_crack_jar.sh
 ```
 

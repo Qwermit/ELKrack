@@ -18,6 +18,7 @@ Tested versions 8.X (as of crack-elasticsearch-by-docker readme):
 Tested versions 9.X:
 * elasticsearch 9.0.1
 * elasticsearch 9.1.3
+* elasticsearch 9.2.3
 * elasticsearch 9.3.3
 
 ## Requirements
